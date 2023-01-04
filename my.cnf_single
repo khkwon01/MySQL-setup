@@ -48,4 +48,4 @@ enforce-gtid-consistency=true
 performance_schema_consumer_events_statements_history_long = ON
 
 # Plugin load (MySQL Enterprise Thread Pool)
-plugin-load=thread_pool.so;audit_log.so
+plugin-load=thread_pool.so;audit_log.so;data_masking.so
