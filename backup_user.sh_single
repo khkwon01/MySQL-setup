@@ -1,0 +1,10 @@
+create user mysqlbackup@'%' identified by 'Ttatest1!';
+GRANT SELECT, BACKUP_ADMIN, RELOAD, PROCESS, SUPER, REPLICATION CLIENT ON *.* TO mysqlbackup@'%';
+GRANT CREATE, INSERT, DROP, UPDATE ON mysql.backup_progress TO mysqlbackup@'%';
+GRANT CREATE, INSERT, DROP, UPDATE, SELECT, ALTER ON mysql.backup_history TO mysqlbackup@'%';
+GRANT LOCK TABLES, CREATE, DROP, FILE ON *.* TO mysqlbackup@'%';
+GRANT CREATE, INSERT, DROP, UPDATE ON mysql.backup_sbt_history TO mysqlbackup@'%';
+GRANT ENCRYPTION_KEY_ADMIN ON *.* TO mysqlbackup@'%';
+GRANT INNODB_REDO_LOG_ARCHIVE ON *.* TO mysqlbackup@'%';
+GRANT INSERT, ALTER ON *.* TO mysqlbackup@'%';
+GRANT SELECT ON performance_schema.replication_group_members TO mysqlbackup@'%';
