@@ -11,8 +11,10 @@ mkdir -p /mysql/keyring
 
 
 cp /root/tta-main/my.cnf_single /mysql/etc/my.cnf
-cp /root/tta-main/start_mysql.sh_single /mysql/start_mysql.sh
+cp /root/tta-main/4.start_mysql.sh /mysql/start_mysql.sh
+cp /root/tta-main/4.stop_mysql.sh /mysql/stop_mysql.sh
 chmod 750 /mysql/start_mysql.sh
+chmod 750 /mysql/stop_mysql.sh
 
 chown -R mysql:mysql /mysql
 echo "export PATH=/mysql/mysql-latest/bin:\$PATH" >> /etc/profile
