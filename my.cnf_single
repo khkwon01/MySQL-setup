@@ -39,7 +39,7 @@ performance_schema_consumer_events_statements_history_long = ON
 # Plugin load 
 plugin-load=thread_pool.so;component_validate_password.so;audit_log.so;data_masking.so
 
-# TDE plugin load (start option : --early-plugin-load)
+# TDE plugin load 
 # early-plugin-load-key=keyring_encrypted_file.so
 # keyring_encrypted_file_data = /mysql/keyring/keyring-encrypted
 # keyring_encrypted_file_password = ttasecret1#
