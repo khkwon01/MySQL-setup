@@ -25,7 +25,7 @@
    - my.cnf에서 encrypt 관련 옵션에 대해 #처리를 해제
    - mysql 시작시 --early-plugin-load 옵션을 사용하여 시작
 #### B. file-based 암호화
-   - create tabel ~~~ encryption = 'Y'
+   - create table ~~~ encryption = 'Y'
 
 
 
