@@ -1,6 +1,12 @@
 # tta 인증 설치
+## 1. 설치 서버
+| 구분 | OS | EA | 설치항목 |
+|---|:---:|---:|---|
+| `단일 서버` | CentOS 8.0 or Oracle Linux 8.0 | 1 | MySQL 8.0.31 Server, Backup |
+| `이중화 서버` | CentOS 8.0 or Oracle Linux 8.0 | 3 | MySQL 8.0.31 Server, Shell, Router(3번서버) |
 
-## 1. MySQL 8.0.31 싱글 인스턴스 구성 (파일중 _single 항목)
+
+## 2. MySQL 8.0.31 싱글 인스턴스 구성 (파일중 _single 항목)
 ### 1) 구성도
 ![image](https://user-images.githubusercontent.com/8789421/210689191-4d3fc35b-cff2-44da-801a-3aec88777556.png)
 
@@ -29,7 +35,7 @@
 
 
 
-## 2. MySQL 8.0.31 Cluster 구성 (파일중 _cluster 항목)
+## 3. MySQL 8.0.31 Cluster 구성 (파일중 _cluster 항목)
 ### 1) 구성도
 ![image](https://user-images.githubusercontent.com/8789421/210688284-16182669-ae94-4183-9750-5583bdbcf17e.png)
 
