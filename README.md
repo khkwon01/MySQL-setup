@@ -25,3 +25,4 @@
    - create tabel ~~~ encryption = 'Y'
 
 ## 2. MySQL 8.0.31 Cluster 구성 (파일중 _cluster 항목)
+![image](https://user-images.githubusercontent.com/8789421/210688284-16182669-ae94-4183-9750-5583bdbcf17e.png)
