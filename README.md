@@ -11,6 +11,8 @@
    - call mysql.sp_set_firewall_mode('계정명', 'PROTECTING');   <-- 수집된 SQL로 이상한 SQL를 보호..
    - call mysql.sp_set_firewall_mode('계정명', 'DETECTING');    <-- 수집된 SQL로 이상한 SQL를 찾기만..
    - call mysql.sp_set_firewall_mode('계정명', 'OFF');    <-- 수집된 SQL로 이상한 SQL를 찾기만..
+#### C. firewall 권한
+   - FIREWALL_ADMIN, FIREWALL_EXEMPT
    
 ### 2) 마스킹, 감사, thread plugin
    - my.cnf 파일에 해당 plugin 내용 반영
