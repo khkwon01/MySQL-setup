@@ -41,5 +41,5 @@ plugin-load=thread_pool.so;component_validate_password.so;audit_log.so;data_mask
 
 # TDE plugin load 
 # early-plugin-load-key=keyring_encrypted_file.so
-# keyring_encrypted_file_data = /mysql/keyring/keyring-encrypted
-# keyring_encrypted_file_password = ttasecret1#
+# keyring_encrypted_file_data=/mysql/keyring/keyring-encrypted
+# keyring_encrypted_file_password=Ttatest1! 
