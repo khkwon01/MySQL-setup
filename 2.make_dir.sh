@@ -7,6 +7,6 @@ mkdir -p /mysql/log
 mkdir -p /mysql/binlog
 mkdir -p /mysql/etc
 
-cp /root/tta-main/my.cnf_single /mysql/etc
+cp /root/tta-main/my.cnf_single /mysql/etc/my.cnf
 
 chown -R mysql:mysql /mysql
