@@ -13,7 +13,7 @@ mkdir -p /mysql/keyring
 cp /root/tta-main/my.cnf_single /mysql/etc/my.cnf
 
 # cluster mysql (when cluster mysql install, remove the comment and then change server id according to assigned id)
-cp /root/tta-main/my.cnf_cluster /mysql/etc/my.cnf
+# cp /root/tta-main/my.cnf_cluster /mysql/etc/my.cnf
 
 cp /root/tta-main/4.start_mysql.sh /mysql/start_mysql.sh
 cp /root/tta-main/4.stop_mysql.sh /mysql/stop_mysql.sh
