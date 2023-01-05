@@ -2,7 +2,7 @@
 ## 1. 설치 서버
 | 구분 | OS | EA | 설치항목 |
 |---|:---:|---:|---|
-| `단일 서버` | CentOS 8.0 or Oracle Linux 8.0 | 1 | MySQL 8.0.31 Server, Backup |
+| `단일 서버` | CentOS 8.0 or Oracle Linux 8.0 | 1 | MySQL 8.0.31 Server |
 | `이중화 서버` | CentOS 8.0 or Oracle Linux 8.0 | 3 | MySQL 8.0.31 Server, Shell, Router(3번서버) |
 
 
