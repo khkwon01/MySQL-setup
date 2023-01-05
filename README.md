@@ -14,7 +14,7 @@
 #### C. firewall 권한
    - FIREWALL_ADMIN, FIREWALL_EXEMPT
    
-### 2) 마스킹, 감사, thread plugin
+### 2) 패스워드, 마스킹, 감사, thread plugin
    - my.cnf 파일에 해당 plugin 내용 반영
 
 ### 3) TDE 암호화
