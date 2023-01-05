@@ -7,6 +7,7 @@ mkdir -p /mysql/log
 mkdir -p /mysql/binlog
 mkdir -p /mysql/etc
 mkdir -p /mysql/mysql-latest
+mkdir -p /mysql/keyring
 
 
 cp /root/tta-main/my.cnf_single /mysql/etc/my.cnf
