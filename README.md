@@ -1,4 +1,4 @@
-# tta
+# tta 인증 설치
 
 ## 1. MySQL 8.0.31 싱글 인스턴스 구성 (파일중 _single 항목)
 ### 1) Firewall 기능
