@@ -1,7 +1,5 @@
 [mysqld]
 # General configurations
-port=3306
-mysqlx_port=33060
 server_id=1
 socket=/mysql/temp/mysql.sock
 mysqlx_socket=/mysql/temp/mysqlx.sock
@@ -25,7 +23,6 @@ open-files-limit=5000
 secure-file-priv=/mysql/data
 
 # InnoDB settings
-innodb_flush_log_at_trx_commit=1
 innodb_buffer_pool_size=512M
 
 # MyISAM settings
@@ -34,18 +31,15 @@ key_buffer_size=124M
 # Enable binary logs
 log-bin=/mysql/binlog/binlog
 binlog-format=row
-sync_binlog = 1
 
-# These two variables are deprecated with MySQL 8
-master-info-repository=TABLE
-relay-log-info-repository=TABLE
-
-# Enable GTID
-gtid-mode=on
-enforce-gtid-consistency=true
 
 # Performance Monitor
 performance_schema_consumer_events_statements_history_long = ON
 
-# Plugin load (MySQL Enterprise Thread Pool)
+# Plugin load 
 plugin-load=thread_pool.so;audit_log.so;data_masking.so
+
+# TDE plugin load (start option : --early-plugin-load)
+# early-plugin-load-key=keyring_encrypted_file.so
+# keyring_encrypted_file_data = /mysql/keyring/keyring-encrypted
+# keyring_encrypted_file_password = ttasecret1#
