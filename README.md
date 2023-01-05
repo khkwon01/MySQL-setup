@@ -14,3 +14,10 @@
    
 ### 2) 마스킹, 감사, thread plugin
    - my.cnf 파일에 해당 plugin 내용 반영
+
+### 3) TDE 암호화
+#### A. 구성
+   - my.cnf에서 encrypt 관련 옵션에 대해 #처리를 해제
+   - mysql 시작시 --early-plugin-load 옵션을 사용하여 시작
+#### B. file-based 암호화
+   - create tabel ~~~ encryption = 'Y'
