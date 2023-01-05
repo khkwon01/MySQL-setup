@@ -6,6 +6,8 @@ mkdir -p /mysql/temp
 mkdir -p /mysql/log
 mkdir -p /mysql/binlog
 mkdir -p /mysql/etc
+mkdir -p /mysql/mysql-latest
+
 
 cp /root/tta-main/my.cnf_single /mysql/etc/my.cnf
 cp /root/tta-main/start_mysql.sh_single /mysql/start_mysql.sh
