@@ -23,3 +23,5 @@
    - mysql 시작시 --early-plugin-load 옵션을 사용하여 시작
 #### B. file-based 암호화
    - create tabel ~~~ encryption = 'Y'
+
+## 2. MySQL 8.0.31 Cluster 구성 (파일중 _cluster 항목)
