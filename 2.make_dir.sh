@@ -14,3 +14,4 @@ cp /root/tta-main/start_mysql.sh_single /mysql/start_mysql.sh
 chmod 750 /mysql/start_mysql.sh
 
 chown -R mysql:mysql /mysql
+echo "export PATH=/mysql/mysql-latest/bin:\$PATH" >> /etc/profile
