@@ -37,7 +37,7 @@ binlog-format=row
 performance_schema_consumer_events_statements_history_long = ON
 
 # Plugin load 
-plugin-load=thread_pool.so;validate_password.so;audit_log.so;data_masking.so
+plugin-load=thread_pool.so;component_validate_password.so;audit_log.so;data_masking.so
 
 # TDE plugin load (start option : --early-plugin-load)
 # early-plugin-load-key=keyring_encrypted_file.so
