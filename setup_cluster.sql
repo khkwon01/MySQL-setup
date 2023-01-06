@@ -47,3 +47,7 @@ dba.rebootClusterFromCompleteOutage()
 -- cluster 삭제
 var cluster = dba.getCluster()
 cluster.dissolve()
+
+
+-- 옵션 조정
+cluster.setOption('transactionSizeLimit', 900000000);
