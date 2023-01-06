@@ -22,3 +22,5 @@ chmod 750 /mysql/stop_mysql.sh
 
 chown -R mysql:mysql /mysql
 echo "export PATH=/mysql/mysql-latest/bin:\$PATH" >> /etc/profile
+
+source ~/.bashrc
