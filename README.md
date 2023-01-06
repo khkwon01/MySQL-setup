@@ -45,3 +45,5 @@
 ## 4. 기본 사용법
 ### 1) Cli 접속 
    - mysql -uroot -p -h 127.0.0.1
+### 2) Jdbc driver 사용
+   - mysql-connector-j-8.0.31.jar
