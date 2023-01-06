@@ -40,6 +40,6 @@
 ![image](https://user-images.githubusercontent.com/8789421/210688284-16182669-ae94-4183-9750-5583bdbcf17e.png)
 
 
-## 3. 기본 사용법
+## 4. 기본 사용법
 ### 1) Cli 접속 
    - mysql -uroot -p -h 127.0.0.1
