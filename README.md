@@ -2,7 +2,7 @@
 ## 1. 설치 서버
 | 구분 | OS | EA | 설치항목 |
 |---|:---:|---:|---|
-| `단일 서버` | Oracle Linux 8.6 | 1 | MySQL 8.0.31 Server |
+| `단일 서버` | Oracle Linux 8.6 | 1 | MySQL 8.0.31 Server, Shell |
 | `이중화 서버` | Oracle Linux 8.6 | 3 | MySQL 8.0.31 Server, Shell, Router(3번서버) |
 - 시스템 패키지 설치에 편이성을 위해 CentOS 보다는 Oracle linux 설치를 요청 (CentOS는 yum 대신 직 rpm를 올려서 설치해야함)
 - CentOS일 경우 : yum install python39-libs, rpm -ivh mysql-shell..
