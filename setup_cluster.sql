@@ -51,3 +51,6 @@ cluster.dissolve()
 
 -- 옵션 조정
 cluster.setOption('transactionSizeLimit', 900000000);
+
+-- help 보기
+cluster.help('setOption')
