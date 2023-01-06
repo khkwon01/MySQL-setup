@@ -1,12 +1,18 @@
 create database json;
 use json;
 
-create table json_table ( id bigint NOT NULL AUTO_INCREMENT,
+create table jsontable ( 
+    id bigint NOT NULL AUTO_INCREMENT,
     doc JSON,
     primary key (id)
 );
 
-select * from json_table;
+select * from jsontable;
 
-insert into json_table(doc) value('{"A": "hello", "b": "test", "c": {"hello": 1}}');
-insert into json_table(doc) value('{"b": "hello"}'),('{"c":"c": {"hello": 1}}');
+insert into jsontable(doc) value('{"A": "hello", "b": "test", "c": {"hello": 1}}');
+insert into jsontable(doc) value('{"b": "hello"}'),('{"c": {"hello": 1}}');
+
+select * from jsontable;
+
+SELECT json_extract (doc, "$.b") FROM jsontable;
+SELECT doc->"$.b" FROM jsontable;
