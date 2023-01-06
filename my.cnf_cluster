@@ -20,6 +20,7 @@ open-files-limit=5000
 
 # Security setting for file load 
 secure-file-priv=/mysql/data
+local_infile=ON
 
 # InnoDB settings 
 innodb_flush_log_at_trx_commit=1 
