@@ -12,6 +12,9 @@
 ### 1) 구성도
 ![image](https://user-images.githubusercontent.com/8789421/210689191-4d3fc35b-cff2-44da-801a-3aec88777556.png)
 
+   - MySQL 시작 : /mysql/start_mysql.sh
+   - MySQL 중단 : /mysql/stop_mysql.sh
+
 ### 2) Firewall 기능
 #### A. 구성
    - 아래 명령어를 통해서 plugin 설치 
