@@ -21,6 +21,7 @@ open-files-limit=5000
 
 # Security setting for file load
 secure-file-priv=/mysql/data
+local_infile=ON
 
 # InnoDB settings
 innodb_buffer_pool_size=512M
