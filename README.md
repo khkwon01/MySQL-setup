@@ -51,3 +51,7 @@
    - mysql -uroot -p -h 127.0.0.1
 ### 2) Jdbc driver 사용
    - mysql-connector-j-8.0.31.jar
+
+## 5. MySQL8.0 매뉴얼
+### 1) 웹사이트 : https://dev.mysql.com/doc/refman/8.0/en/
+       
