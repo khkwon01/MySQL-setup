@@ -45,6 +45,7 @@
 ### 1) 구성도
 ![image](https://user-images.githubusercontent.com/8789421/210688284-16182669-ae94-4183-9750-5583bdbcf17e.png)
 
+   - 서비스IP : <3번 서버 IP> 
    - 서비스포트 (Read/Write용) : 6446
    - 서비스포트 (Read용) : 6447
 
