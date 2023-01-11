@@ -4,7 +4,7 @@
 |---|:---:|---:|---|
 | `단일 서버` | Oracle Linux 8.6 or CentOS 8.0 | 1 | MySQL 8.0.31 Server, Shell, Monitor |
 | `이중화 서버` | Oracle Linux 8.6 or CentOS 8.0 | 3 | MySQL 8.0.31 Server, Shell, Router(3번서버) |
-- 시스템 패키지 설치에 편이성을 위해 CentOS 보다는 Oracle linux 설치를 요청 (CentOS는 yum 대신  rpm를 올려서 설치해야함)
+- 시스템 패키지 설치에 편이성을 위해 CentOS 보다는 Oracle linux 설치를 요청 (CentOS는 yum대신 rpm를 올려서 설치해야함)
 - CentOS일 경우 : yum install python39-libs, rpm -ivh mysql-shell..
 - OS 방화벽은 DB 관련 포트를 다 오픈 하던가 아님 disable : systemctl stop firewall.service, systemctl dsiable firewall.service
 
