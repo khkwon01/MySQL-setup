@@ -34,8 +34,7 @@
 
 ### 4) TDE 암호화
 #### A. 구성
-   - my.cnf에서 encrypt 관련 옵션에 대해 #처리를 해제
-   - mysql 시작시 --early-plugin-load 옵션을 사용하여 시작
+   - mysql 시작시 early_plugin_load 옵션 포함하여 미리 load 되도록 조정
 #### B. file-based 암호화
    - create table ~~~ encryption = 'Y'
 
