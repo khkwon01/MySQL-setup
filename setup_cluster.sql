@@ -1,9 +1,9 @@
--- admin 계정
-~~ CREATE USER 'admin'@'%' IDENTIFIED BY 'Ttatest1!'; ~~
-~~ GRANT ALL PRIVILEGES ON *.* TO admin@'%' WITH GRANT OPTION; ~~
+-- admin 계정 (configureInstance시 생성)
+-- CREATE USER 'admin'@'%' IDENTIFIED BY 'Ttatest1!'; 
+-- GRANT ALL PRIVILEGES ON *.* TO admin@'%' WITH GRANT OPTION; 
 
 -- mysqlsh tool 
--- 1/2/3번 서버
+-- 1/2/3번 서버별로..
 dba.configureInstance('root:@127.0.0.1', {clusterAdmin: 'admin', clusterAdminPassword:'Ttatest1!', password:'Ttatest1!'})
 
 -- cluster configuration check.
