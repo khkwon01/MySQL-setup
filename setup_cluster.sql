@@ -1,6 +1,6 @@
 -- admin 계정
-CREATE USER 'admin'@'%' IDENTIFIED BY 'Ttatest1!';
-GRANT ALL PRIVILEGES ON *.* TO admin@'%' WITH GRANT OPTION;
+~~CREATE USER 'admin'@'%' IDENTIFIED BY 'Ttatest1!';~~
+~~GRANT ALL PRIVILEGES ON *.* TO admin@'%' WITH GRANT OPTION;~~
 
 -- mysqlsh tool 
 -- 1/2/3번 서버
