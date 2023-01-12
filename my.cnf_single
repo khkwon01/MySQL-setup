@@ -41,6 +41,6 @@ performance_schema_consumer_events_statements_history_long = ON
 plugin-load=thread_pool.so;data_masking.so;validate_password.so
 
 # TDE plugin load 
-#early-plugin-load-key=keyring_encrypted_file.so
+#early-plugin-load=keyring_encrypted_file.so
 #keyring_encrypted_file_data=/mysql/keyring/keyring-encrypted
 #keyring_encrypted_file_password=Ttatest1! 
