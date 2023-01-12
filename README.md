@@ -57,7 +57,7 @@
      - 중단 : /opt/mysql/enterprise/monitor/mysqlmonitorctl.sh stop
      - 시작 : /opt/mysql/enterprise/monitor/mysqlmonitorctl.sh start
 #### B. 접속 
-   - https://<single ip>:18443
+   - https://<single ip>:18443  (user : admin)
 
 ## 3. MySQL 8.0.31 Cluster 구성 (파일중 _cluster 항목)
 ### 1) 구성도
