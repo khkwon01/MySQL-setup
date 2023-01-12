@@ -46,7 +46,17 @@
      - INSTALL COMPONENT "file://component_enterprise_encryption";
    - 기존(8.0.29)과 다르게 기본 암호화 function은 위에 설치명령어 진행시 
 
-
+### 6) Monitoring 구성
+#### A. 설치
+   - chmod 700 mysqlmonitor-8.0.32.1445-linux-x86_64-installer.bin
+   - sh mysqlmonitor-8.0.32.1445-linux-x86_64-installer.bin
+     - 언어 : engnlish, system size : small, bundle db password : 다른것과 동일
+   - 시작/중단/상태 체크 명령어
+     - 상태체크 : /opt/mysql/enterprise/monitor/mysqlmonitorctl.sh status
+     - 중단 : /opt/mysql/enterprise/monitor/mysqlmonitorctl.sh stop
+     - 시작 : /opt/mysql/enterprise/monitor/mysqlmonitorctl.sh start
+#### B. 접속 
+   - https://<single ip>:18443
 
 ## 3. MySQL 8.0.31 Cluster 구성 (파일중 _cluster 항목)
 ### 1) 구성도
