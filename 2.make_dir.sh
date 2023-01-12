@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mkdir /mysql
+mkdir -p /mysql
 mkdir -p /mysql/data
 mkdir -p /mysql/temp
 mkdir -p /mysql/log
