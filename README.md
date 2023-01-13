@@ -66,7 +66,10 @@
    - 서비스IP : <3번 서버 IP> 
    - 서비스포트 (Read/Write용) : 6446
    - 서비스포트 (Read용) : 6447
-
+### 2) 사용시 주의사항 (아래는 요구사항임) 
+   - Innodb 엔진만 지원 (table 구성시 참조)
+   - Table primary key는 필수 
+   - cluster 
 
 ## 4. 기본 사용법
 ### 1) Cli 접속 
