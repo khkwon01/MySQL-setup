@@ -24,7 +24,9 @@ secure-file-priv=/mysql/data
 local_infile=ON
 
 # InnoDB settings
-innodb_buffer_pool_size=512M
+innodb_buffer_pool_size=2G   
+# innodb_buffer_pool_size=4G 
+
 
 # MyISAM settings
 key_buffer_size=124M
