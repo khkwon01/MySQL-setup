@@ -69,7 +69,7 @@
 ### 2) 사용시 주의사항 (아래는 요구사항임) 
    - Innodb 엔진만 지원 (table 구성시 참조)
    - Table primary key는 필수 
-   - cluster 
+   - cluster 서버간 안정적인 네트웍
 
 ## 4. 기본 사용법
 ### 1) Cli 접속 
