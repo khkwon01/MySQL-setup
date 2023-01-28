@@ -7,6 +7,7 @@
 - 시스템 패키지 설치에 편이성을 위해 CentOS 보다는 Oracle linux 설치를 요청 (CentOS는 yum대신 rpm를 올려서 설치해야함)
 - CentOS일 경우 : yum install python39-libs, rpm -ivh mysql-shell..
 - OS 방화벽은 DB 관련 포트를 다 오픈 하던가 아님 disable : systemctl stop firewalld.service, systemctl disable firewalld.service
+- 커널값 수정 : vm.swappiness 1 로 
 
 
 ## 2. MySQL 8.0.31 싱글 인스턴스 구성 (파일중 _single 항목)
