@@ -10,5 +10,8 @@ echo "root temp password : " `grep -i 'temporary password' /mysql/log/err_log.lo
 # start mysql
 /mysql/start_mysql.sh > /dev/null
 
+# sleep 5 until mysql server startup..
+sleep 5
+
 # password를 Ttatest1! 로 설정
 /mysql/mysql-latest/bin/mysql_secure_installation -h127.0.0.1
