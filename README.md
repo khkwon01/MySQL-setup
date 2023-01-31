@@ -47,7 +47,7 @@
 #### A. 구성
    - mysql cli에서 아래 명령 수행
      - INSTALL COMPONENT "file://component_enterprise_encryption";
-   - 기존(8.0.29)과 다르게 기본 암호화 function은 위에 설치명령어 진행시 
+   - 기존(8.0.29)과 다르게 기본 암호화 function은 이미 설치 되어 있고, 위에 명령어 추가 관련 암호화 기능 설치
 
 ### 6) Monitoring 구성
 #### A. 설치
