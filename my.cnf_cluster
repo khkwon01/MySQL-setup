@@ -24,7 +24,8 @@ local_infile=ON
 
 # InnoDB settings 
 innodb_flush_log_at_trx_commit=1 
-innodb_buffer_pool_size=512M
+#innodb_buffer_pool_size=512M
+innodb_buffer_pool_size=1G
 
 # MyISAM settings 
 key_buffer_size=124M
