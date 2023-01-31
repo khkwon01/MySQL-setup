@@ -11,6 +11,9 @@ dba.checkInstanceConfiguration('admin@<1번ip>')
 dba.checkInstanceConfiguration('admin@<2번ip>') 
 dba.checkInstanceConfiguration('admin@<3번ip>') 
 
+-- 1번에서 admin으로 로그인
+\c admin@<1번ip>
+
 -- 이상이 없으면 cluster 생성 (1번)
 var cluster = dba.createCluster('testCluster')
 cluster.status()
