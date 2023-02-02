@@ -63,7 +63,7 @@
 
 ## 3. MySQL 8.0.31 Cluster 구성 (파일중 _cluster 항목)
 ### 1) 구성도
-![image](https://user-images.githubusercontent.com/8789421/210688284-16182669-ae94-4183-9750-5583bdbcf17e.png)
+![image](https://user-images.githubusercontent.com/8789421/216266513-7ba0c569-4e77-49af-ac62-99952cf39763.png)
 
    - 서비스IP : <3번 서버 IP> 
    - 서비스포트 (Read/Write용) : 6446
@@ -72,7 +72,10 @@
    - Innodb 엔진만 지원 (table 구성시 참조)
    - Table primary key는 필수 
    - cluster 서버간 안정적인 네트웍
-### 3) 
+### 3) cluster 상태 확인
+   - mysqlsh --uril admin@127.0.0.1
+   - var cluster = dba.getCluster()
+   - cluster.status()
 
 ## 4. 기본 사용법
 ### 1) Cli 접속 
