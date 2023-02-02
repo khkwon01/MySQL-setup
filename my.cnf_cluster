@@ -15,7 +15,7 @@ general_log_file=/mysql/log/gl_log.log
 slow_query_log_file=/mysql/log/sq_log.log
 
 # Maximum limits 
-max-connections=200 
+max-connections=1000 
 open-files-limit=5000
 
 # Security setting for file load 
@@ -25,7 +25,7 @@ local_infile=ON
 # InnoDB settings 
 innodb_flush_log_at_trx_commit=1 
 #innodb_buffer_pool_size=512M
-innodb_buffer_pool_size=1G
+innodb_buffer_pool_size=2G
 innodb_flush_method=O_DIRECT
 
 # MyISAM settings 
