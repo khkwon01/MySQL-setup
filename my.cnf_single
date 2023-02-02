@@ -16,7 +16,7 @@ general_log_file=/mysql/log/gl_log.log
 slow_query_log_file=/mysql/log/sq_log.log
 
 # Maximum limits
-max-connections=200
+max-connections=1000
 open-files-limit=5000
 
 # Security setting for file load
