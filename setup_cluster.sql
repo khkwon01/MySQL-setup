@@ -54,6 +54,8 @@ cluster.dissolve()
 
 -- 옵션 조정
 cluster.setOption('transactionSizeLimit', 900000000);
+cluster.setOption('expelTimeout', 30);
+cluster.setOption('consistency', 'BEFORE_ON_PRIMARY_FAILOVER');
 
 -- help 보기
 cluster.help('setOption')
