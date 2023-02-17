@@ -1,25 +1,25 @@
 [mysqld]
 # General configurations
 server_id=10             # server1 : 10, server2 : 20, server3 : 30
-socket=/mysql/temp/mysql.sock 
-mysqlx_socket=/mysql/temp/mysqlx.sock
+socket=/home/mysql/temp/mysql.sock 
+mysqlx_socket=/home/mysql/temp/mysqlx.sock
 user=mysql
 
 # File locations 
-basedir=/mysql/mysql-latest 
-plugin-dir=/mysql/mysql-latest/lib/plugin 
-datadir=/mysql/data
-tmpdir=/mysql/temp 
-log-error=/mysql/log/err_log.log 
-general_log_file=/mysql/log/gl_log.log 
-slow_query_log_file=/mysql/log/sq_log.log
+basedir=/home/mysql/mysql-latest 
+plugin-dir=/home/mysql/mysql-latest/lib/plugin 
+datadir=/home/mysql/data
+tmpdir=/home/mysql/temp 
+log-error=/home/mysql/log/err_log.log 
+general_log_file=/home/mysql/log/gl_log.log 
+slow_query_log_file=/home/mysql/log/sq_log.log
 
 # Maximum limits 
 max-connections=1000 
 open-files-limit=5000
 
 # Security setting for file load 
-secure-file-priv=/mysql/data
+secure-file-priv=/home/mysql/data
 local_infile=ON
 
 # InnoDB settings 
@@ -32,7 +32,7 @@ innodb_flush_method=O_DIRECT
 key_buffer_size=124M
 
 # Enable binary logs 
-log-bin=/mysql/binlog/binlog 
+log-bin=/home/mysql/binlog/binlog 
 binlog-format=row
 sync_binlog = 1
 
@@ -56,5 +56,5 @@ plugin-load=thread_pool.so;data_masking.so;validate_password.so
 
 # TDE plugin load 
 early-plugin-load=keyring_encrypted_file.so
-keyring_encrypted_file_data=/mysql/keyring/keyring-encrypted
+keyring_encrypted_file_data=/home/mysql/keyring/keyring-encrypted
 keyring_encrypted_file_password=Ttatest1!
