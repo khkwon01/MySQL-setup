@@ -20,7 +20,7 @@ cp /root/tta-main/4.stop_mysql.sh /home/mysql/stop_mysql.sh
 chmod 750 /home/mysql/start_mysql.sh
 chmod 750 /home/mysql/stop_mysql.sh
 
-chown -R mysql:mysql /mysql
+chown -R mysql:mysql /home/mysql
 echo "export PATH=/home/mysql/mysql-latest/bin:\$PATH" >> /etc/profile
 echo "export PATH=/home/mysql/mysql-latest/bin:\$PATH" >> ~/.bashrc
 
