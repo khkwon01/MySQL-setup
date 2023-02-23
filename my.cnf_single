@@ -33,7 +33,7 @@ innodb_flush_method=O_DIRECT
 key_buffer_size=124M
 
 # Enable binary logs
-log-bin=/mysql/binlog/binlog
+log-bin=/home/mysql/binlog/binlog
 binlog-format=row
 
 
