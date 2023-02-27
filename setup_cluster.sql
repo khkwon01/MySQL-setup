@@ -37,7 +37,7 @@ mysql -uadmin -p -h<3번ip> -P6447    -- read 전용
 SELECT @@hostname, @@port;
 
 -- primary 전환
-cluster.setPrimaryInstance('tta-cluster01');
+cluster.setPrimaryInstance('tta-cluster01:3306');
 
 -- cluster 중단시
 router 중단 : systemctl stop mysqlrouter
