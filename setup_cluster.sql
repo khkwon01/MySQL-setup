@@ -72,3 +72,4 @@ cluster.help('setOption')
 -- cluster.setOption("tag:location", null)
 -- cluster 상태 확인
 mysqlsh admin@127.0.0.1 -- cluster status
+cluster.status({'extended':1});  -- 0 ~ 3까지 
