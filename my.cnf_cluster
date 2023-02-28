@@ -41,6 +41,8 @@ master-info-repository=TABLE
 relay-log-info-repository=TABLE
 log-slave-updates=true
 
+disabled_storage_engines="MyISAM,BLACKHOLE,FEDERATED,ARCHIVE,MEMORY"
+
 # Enable GTID
 gtid-mode=on 
 enforce-gtid-consistency=true
