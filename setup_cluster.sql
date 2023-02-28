@@ -26,8 +26,11 @@ cluster.status()
 cluster.addInstance('admin@<3번ip>')
 cluster.status()
 
--- 3번 router 가동 (etc밑에 mysqlrouter config 생성)
-mysqlrouter --bootstrap admin@admin@<3번ip> --user=mysqlrouter
+-- cluster 관리용 admin
+cluster.setupAdminAccount()
+
+-- 3번 router 가동 (etc밑에 mysqlrouter config 생성, cluster.setupRouterAccount())
+mysqlrouter --bootstrap admin@<3번ip> --user=mysqlrouter
 systemctl start mysqlrouter
 
 -- router 사용하여 접속 테스트
