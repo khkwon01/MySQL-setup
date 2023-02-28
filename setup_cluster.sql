@@ -62,3 +62,7 @@ cluster.setOption('consistency', 'BEFORE_ON_PRIMARY_FAILOVER');
 
 -- help 보기
 cluster.help('setOption')
+
+-- router에서 instance 제외
+-- cluster.setInstanceOption("admin@tta-cluster02:3306", "tag:_hidden", true);
+-- cluster.setInstanceOption("admin@tta-cluster02:3306", "tag:_disconnect_existing_sessions_when_hidden", true);
