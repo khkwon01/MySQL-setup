@@ -66,3 +66,7 @@ cluster.help('setOption')
 -- router에서 instance 제외
 -- cluster.setInstanceOption("admin@tta-cluster02:3306", "tag:_hidden", true);
 -- cluster.setInstanceOption("admin@tta-cluster02:3306", "tag:_disconnect_existing_sessions_when_hidden", true);
+-- cluster.setInstanceOption("admin@tta-cluster02:3306", "tag:_hidden", false);
+-- cluster.setInstanceOption("admin@tta-cluster02:3306", "tag:_disconnect_existing_sessions_when_hidden", false);
+-- cluster 상태 확인
+mysqlsh admin@127.0.0.1 -- cluster status
