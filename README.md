@@ -76,6 +76,9 @@
    - mysqlsh --uril admin@127.0.0.1
    - var cluster = dba.getCluster()
    - cluster.status()
+### 4) PK 사용 강제화 (PK 사용하지 않을 경우 에러발생)
+   - sql_require_primary_key 옵션 셋팅 (0 --> 1)
+   - 혹시 테이블에 PK 생성이 안되어 있을 경우 내부적으로 생성 SET sql_generate_invisible_primary_key=ON;
 
 ## 4. 기본 사용법
 ### 1) Cli 접속 
