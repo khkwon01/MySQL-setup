@@ -23,7 +23,9 @@ CALL mysql.sp_set_firewall_mode('fwtest@%', 'DETECTING');
 CALL mysql.sp_set_firewall_mode('fwtest@%', 'OFF');
 
 
--- group test 
+-- group test
+grant FIREWALL_ADMIN on *.* to root@'localhost';
+
 CALL mysql.sp_set_firewall_group_mode('fwgrp', 'RECORDING');
 CALL mysql.sp_firewall_group_enlist('fwgrp', 'fwtest@%');
 
