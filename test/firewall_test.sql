@@ -21,3 +21,21 @@ CALL mysql.sp_set_firewall_mode('fwtest@%', 'DETECTING');
 -- fwtest 계정으로 sql 수행
 
 CALL mysql.sp_set_firewall_mode('fwtest@%', 'OFF');
+
+
+
+CALL mysql.sp_set_firewall_group_mode('fwgrp', 'RECORDING');
+CALL mysql.sp_firewall_group_enlist('fwgrp', 'fwtest@%');
+
+SELECT MODE FROM performance_schema.firewall_groups
+       WHERE NAME = 'fwgrp';
+       
+SELECT * FROM performance_schema.firewall_membership
+       WHERE GROUP_ID = 'fwgrp' ORDER BY MEMBER_ID;
+       
+SELECT RULE FROM performance_schema.firewall_group_allowlist
+       WHERE NAME = 'fwgrp';
+       
+CALL mysql.sp_set_firewall_group_mode('fwgrp', 'PROTECTING');
+
+CALL mysql.sp_firewall_group_delist('fwgrp', 'fwtest@%');
