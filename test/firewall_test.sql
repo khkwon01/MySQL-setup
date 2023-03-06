@@ -23,7 +23,7 @@ CALL mysql.sp_set_firewall_mode('fwtest@%', 'DETECTING');
 CALL mysql.sp_set_firewall_mode('fwtest@%', 'OFF');
 
 
-
+-- group test 
 CALL mysql.sp_set_firewall_group_mode('fwgrp', 'RECORDING');
 CALL mysql.sp_firewall_group_enlist('fwgrp', 'fwtest@%');
 
