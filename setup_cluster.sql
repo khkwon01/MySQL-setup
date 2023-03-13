@@ -37,8 +37,10 @@ systemctl start mysqlrouter
 mysql -uadmin -p -h<3번ip> -P6446    -- write 전용
 mysql -uadmin -p -h<3번ip> -P6447    -- read 전용
 
+-- 연결된 세션에 host, port 확인
 SELECT @@hostname, @@port;
 
+-- connection round robin 테스트
 mysql -u root -p'Ttatest1!' -h<3번ip> -P 6447 -e "select @@hostname, @@port";
 
 -- primary 전환
