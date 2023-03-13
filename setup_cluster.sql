@@ -39,6 +39,8 @@ mysql -uadmin -p -h<3번ip> -P6447    -- read 전용
 
 SELECT @@hostname, @@port;
 
+mysql -u root -p -h127.0.0.1 -e "select @@hostname, @@port";
+
 -- primary 전환
 cluster.setPrimaryInstance('tta-cluster01:3306');
 
