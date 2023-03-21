@@ -99,21 +99,21 @@ int main(int argc, const char* argv[])
   /* Create schema test if not exists */
  
   res = mysqlx_sql(sess,
-                   "CREATE SCHEMA IF NOT EXISTS test",
+                   "CREATE SCHEMA IF NOT EXISTS tta5",
                    MYSQLX_NULL_TERMINATED);
   RESULT_CHECK(res, sess);
  
   /* Drop test table if exists */
  
   res = mysqlx_sql(sess,
-                   "DROP TABLE IF EXISTS test.crud_placeholder_test",
+                   "DROP TABLE IF EXISTS tta5.crud_placeholder_test",
                    MYSQLX_NULL_TERMINATED);
   RESULT_CHECK(res, sess);
  
   /* Create a test table */
  
   res = mysqlx_sql(sess,
-                   "CREATE TABLE test.crud_placeholder_test " \
+                   "CREATE TABLE tta5.crud_placeholder_test " \
                    "(sint BIGINT, uint BIGINT UNSIGNED, flv FLOAT," \
                    "dbv DOUBLE, strv VARCHAR(255))",
                    MYSQLX_NULL_TERMINATED);
@@ -123,7 +123,7 @@ int main(int argc, const char* argv[])
   /* Do insert as a plain SQL with parameters */
  
   crud = mysqlx_sql_new(sess,
-                        "INSERT INTO test.crud_placeholder_test " \
+                        "INSERT INTO tta5.crud_placeholder_test " \
                         "(sint, uint, flv, dbv, strv) VALUES (?,?,?,?,?)",
                         MYSQLX_NULL_TERMINATED);
   CRUD_CHECK(crud, sess);
