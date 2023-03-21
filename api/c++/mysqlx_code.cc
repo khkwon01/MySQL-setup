@@ -5,19 +5,19 @@
 /* Error processing macros */
 #define CRUD_CHECK(C, S) if (!C) \
   { \
-    printf("\nError! %s", mysqlx_error_message(S)); \
+    printf("\nError! %s\n", mysqlx_error_message(S)); \
     return -1; \
   }
  
 #define RESULT_CHECK(R, C) if (!R) \
   { \
-    printf("\nError! %s", mysqlx_error_message(C)); \
+    printf("\nError! %s\n", mysqlx_error_message(C)); \
     return -1; \
   }
  
 #define IS_OK(R, C)  if (R != RESULT_OK) \
   { \
-    printf("\nError! %s", mysqlx_error_message(C)); \
+    printf("\nError! %s\n", mysqlx_error_message(C)); \
     return -1; \
   }
  
@@ -114,7 +114,7 @@ int main(int argc, const char* argv[])
  
   res = mysqlx_sql(sess,
                    "CREATE TABLE tta5.crud_placeholder_test " \
-                   "(sint BIGINT, uint BIGINT UNSIGNED, flv FLOAT," \
+                   "(sint BIGINT primary key, uint BIGINT UNSIGNED, flv FLOAT," \
                    "dbv DOUBLE, strv VARCHAR(255))",
                    MYSQLX_NULL_TERMINATED);
   RESULT_CHECK(res, sess);
