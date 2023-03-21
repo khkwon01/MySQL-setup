@@ -14,3 +14,4 @@
 
 ## Refer document url
 * https://dev.mysql.com/doc/dev/connector-cpp/8.0/
+* https://dev.mysql.com/doc/connector-cpp/8.0/en/
