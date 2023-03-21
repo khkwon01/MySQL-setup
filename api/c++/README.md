@@ -1,4 +1,4 @@
-## Install g++ compiler
+## Install g++ compiler (OS : centos8)
 * yum install -y gcc-toolset-9-gcc gcc-toolset-9-gcc-c++
 
 ## Install c++ connector 
