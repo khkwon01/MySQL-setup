@@ -27,7 +27,7 @@ int main()
 	catch (sql::SQLException e)
 	{
 		cout << "Could not connect to server. Error message: " << e.what() << endl;
-		system("pause");
+		system("sleep 1");
 		exit(1);
 	}
 
