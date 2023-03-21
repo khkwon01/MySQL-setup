@@ -4,7 +4,7 @@ yum install gcc
 ## How to compile a c code 
 sh c_compile.sh [program name without c extension]
 
-## Refer document url
+## Refer to the document url
 https://dev.mysql.com/doc/c-api/8.0/en/
 
 ## Extra code 
