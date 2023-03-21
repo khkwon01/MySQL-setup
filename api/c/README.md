@@ -1,3 +1,6 @@
+## Install gcc compiler
+yum install gcc
+
 ## How to compile a c code 
 sh c_compile.sh [program name without c extension]
 
