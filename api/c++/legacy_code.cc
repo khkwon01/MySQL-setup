@@ -5,13 +5,6 @@
 #include <memory>
 #include <mysql/jdbc.h>
 
-#include <jdbc/mysql_connection.h>
-#include <jdbc/mysql_driver.h>
-#include <jdbc/cppconn/driver.h>
-#include <jdbc/cppconn/exception.h>
-#include <jdbc/cppconn/resultset.h>
-#include <jdbc/cppconn/statement.h>
-#include <jdbc/cppconn/prepared_statement.h>
 using namespace std;
 
 //for demonstration only. never save your password in the code!
@@ -38,8 +31,7 @@ int main()
 		exit(1);
 	}
 
-	//create database "tta4" ahead of time
-	con->createSchema("tta4")
+	//create database "tta4" ahead of this program execution.
 	con->setSchema("tta4");
 
 	stmt = con->createStatement();
