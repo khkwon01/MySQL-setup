@@ -13,6 +13,6 @@
 ## How to compile a c++ code for mysqx api
 * g++ -std=c++11 -I /usr/include/mysql-cppconn-8 -L /usr/lib64 mysqlx_code.cc -lmysqlcppconn8 -o mysqlx_code
 
-## Refer document url
+## Refer to the document url
 * https://dev.mysql.com/doc/dev/connector-cpp/8.0/
 * https://dev.mysql.com/doc/connector-cpp/8.0/en/
