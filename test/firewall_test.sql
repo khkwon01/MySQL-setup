@@ -25,6 +25,7 @@ CALL mysql.sp_set_firewall_mode('fwtest@%', 'OFF');
 -- whitelist reset
 CALL mysql.sp_set_firewall_mode('fwtest@%', 'RESET');
 
+
 -- group test
 grant FIREWALL_ADMIN on *.* to root@'localhost';
 
@@ -43,6 +44,16 @@ SELECT RULE FROM performance_schema.firewall_group_allowlist
 CALL mysql.sp_set_firewall_group_mode('fwgrp', 'PROTECTING');
 
 CALL mysql.sp_firewall_group_delist('fwgrp', 'fwtest@%');
+
+-- performance에서 확인
+SELECT MODE FROM performance_schema.firewall_groups
+       WHERE NAME = 'fwgrp';
+       
+SELECT * FROM performance_schema.firewall_membership
+       WHERE GROUP_ID = 'fwgrp' ORDER BY MEMBER_ID;
+
+SELECT RULE FROM performance_schema.firewall_group_allowlist
+       WHERE NAME = 'fwgrp';
 
 
 -- firewall 삭제
