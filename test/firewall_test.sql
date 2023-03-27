@@ -22,7 +22,7 @@ CALL mysql.sp_set_firewall_mode('fwtest@%', 'DETECTING');
 
 CALL mysql.sp_set_firewall_mode('fwtest@%', 'OFF');
 
--- 
+-- whitelist reset
 CALL mysql.sp_set_firewall_mode('fwtest@%', 'RESET');
 
 -- group test
