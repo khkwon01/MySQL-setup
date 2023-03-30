@@ -1,0 +1,78 @@
+[mysqld]
+# General configurations
+server_id=10             # server1 : 10, server2 : 20, server3 : 30
+socket=/home/mysql/temp/mysql.sock 
+mysqlx_socket=/home/mysql/temp/mysqlx.sock
+user=mysql
+
+# File locations 
+basedir=/home/mysql/mysql-latest 
+plugin-dir=/home/mysql/mysql-latest/lib/plugin 
+datadir=/home/mysql/data
+tmpdir=/home/mysql/temp 
+log-error=/home/mysql/log/err_log.log 
+general_log_file=/home/mysql/log/gl_log.log 
+slow_query_log_file=/home/mysql/log/sq_log.log
+
+# Maximum limits 
+max-connections=1000 
+open-files-limit=5000
+
+# Security setting for file load 
+secure-file-priv=/home/mysql/data
+local_infile=ON
+
+# InnoDB settings 
+innodb_flush_log_at_trx_commit=1 
+
+innodb_buffer_pool_size=32G
+innodb_page_size=8192
+innodb_buffer_pool_instances=16
+innodb_page_cleaners=16
+innodb_flush_method=O_DIRECT
+innodb_io_capacity=6000
+innodb_io_capacity_max=10000
+
+table_open_cache=2048
+innodb_open_files=2048
+open_files_limit=100000 
+max_prepared_stmt_count=1048576
+innodb_change_buffer_max_size=50
+innodb_adaptive_hash_index=off
+innodb_doublewrite=0
+innodb_thread_sleep_delay=500
+thread_cache_size=1000
+innodb_lock_wait_timeout=10
+
+# MyISAM settings 
+key_buffer_size=124M
+
+# Enable binary logs 
+log-bin=/home/mysql/binlog/binlog 
+binlog-format=row
+sync_binlog = 1
+
+# These two variables are deprecated with MySQL 8 
+master-info-repository=TABLE 
+relay-log-info-repository=TABLE
+log-slave-updates=true
+
+# disabled_storage_engines="MyISAM,BLACKHOLE,FEDERATED,ARCHIVE,MEMORY"
+
+# Enable GTID
+gtid-mode=on 
+enforce-gtid-consistency=true
+
+# Extraction Algorithm
+transaction-write-set-extraction=XXHASH64
+
+# Performance Monitor 
+performance_schema_consumer_events_statements_history_long = ON 
+
+# Plugin load example (MySQL Enterprise Thread Pool) 
+plugin-load=thread_pool.so;data_masking.so;validate_password.so
+
+# TDE plugin load 
+early-plugin-load=keyring_encrypted_file.so
+keyring_encrypted_file_data=/home/mysql/keyring/keyring-encrypted
+keyring_encrypted_file_password=Ttatest1!
