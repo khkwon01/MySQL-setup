@@ -64,6 +64,9 @@ cluster.setOption('transactionSizeLimit', 0);
 cluster.setOption('expelTimeout', 30);
 cluster.setOption('consistency', 'BEFORE_ON_PRIMARY_FAILOVER');
 
+-- 대용량 작업시
+cluster.setOption('expelTimeout', 3600);
+
 -- help 보기
 cluster.help('setOption')
 
