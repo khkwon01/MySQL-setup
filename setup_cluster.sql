@@ -57,7 +57,7 @@ dba.rebootClusterFromCompleteOutage()
 -- cluster 삭제
 var cluster = dba.getCluster()
 cluster.dissolve()
-
+Cluster.dissolve({force: true})
 
 -- Global 옵션 조정
 cluster.setOption('transactionSizeLimit', 900000000);
@@ -79,3 +79,5 @@ mysqlsh admin@127.0.0.1 -- cluster status
 cluster.status({'extended':1});  -- 0 ~ 3까지 
 -- split brain(네트웍오류)로부터 cluster 복구 (해당 cluster 파티션 포함된 서버는 online됨)
 cluster.forceQuorumUsingPartitionOf("admin@tta-cluster01:3306")
+-- 메타 데이터 삭제
+var myCluster = dba.dropMetadataSchema()
