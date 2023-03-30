@@ -25,9 +25,9 @@
    - (linux_install_firewall.sql가 firewall plugin 설치 스크립트)
 #### B. 서비스 계정에서 아래 명령어를 사용하여 적용
    - call mysql.sp_set_firewall_mode('계정명', 'RECORDING');    <-- 서비스 SQL 리코딩(수집) 할때
-   - call mysql.sp_set_firewall_mode('계정명', 'PROTECTING');   <-- 수집된 SQL로 이상한 SQL를 보호..
-   - call mysql.sp_set_firewall_mode('계정명', 'DETECTING');    <-- 수집된 SQL로 이상한 SQL를 찾기만..
-   - call mysql.sp_set_firewall_mode('계정명', 'OFF');    <-- 수집된 SQL로 이상한 SQL를 찾기만..
+   - call mysql.sp_set_firewall_mode('계정명', 'PROTECTING');   <-- 수집된 whitelist로 이상한 SQL를 보호..
+   - call mysql.sp_set_firewall_mode('계정명', 'DETECTING');    <-- 수집된 whitelist로 이상한 SQL를 찾고 error log 기록
+   - call mysql.sp_set_firewall_mode('계정명', 'OFF');    <-- firewall off
 #### C. firewall 권한
    - FIREWALL_ADMIN, FIREWALL_EXEMPT
    
