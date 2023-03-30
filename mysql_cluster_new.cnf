@@ -24,7 +24,7 @@ local_infile=ON
 # InnoDB settings 
 innodb_flush_log_at_trx_commit=2 
 innodb_buffer_pool_size=32G
-innodb_page_size=8192
+#innodb_page_size=8192
 innodb_buffer_pool_instances=16
 innodb_page_cleaners=16
 innodb_flush_method=O_DIRECT
@@ -43,7 +43,7 @@ innodb_adaptive_hash_index=off
 innodb_doublewrite=0
 innodb_thread_sleep_delay=500
 thread_cache_size=1000
-transaction_isolation=READ_COMMITTED
+transaction_isolation=READ-COMMITTED
 
 # MyISAM settings 
 key_buffer_size=124M
