@@ -22,15 +22,17 @@ secure-file-priv=/home/mysql/data
 local_infile=ON
 
 # InnoDB settings 
-innodb_flush_log_at_trx_commit=1 
-
+innodb_flush_log_at_trx_commit=2 
 innodb_buffer_pool_size=32G
 innodb_page_size=8192
 innodb_buffer_pool_instances=16
 innodb_page_cleaners=16
 innodb_flush_method=O_DIRECT
-innodb_io_capacity=6000
-innodb_io_capacity_max=10000
+innodb_io_capacity=1000
+innodb_io_capacity_max=2000
+
+innodb_log_file_size=1G
+innodb_log_file_in_group=5
 
 table_open_cache=2048
 innodb_open_files=2048
@@ -41,7 +43,7 @@ innodb_adaptive_hash_index=off
 innodb_doublewrite=0
 innodb_thread_sleep_delay=500
 thread_cache_size=1000
-innodb_lock_wait_timeout=10
+transaction_isolation=READ_COMMITTED
 
 # MyISAM settings 
 key_buffer_size=124M
