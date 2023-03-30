@@ -89,5 +89,7 @@
 ## 5. MySQL8.0 매뉴얼
 ### 1) 웹사이트 : https://dev.mysql.com/doc/refman/8.0/en/
        
-
+## 6. 문제 생겼을 경우
+### 1) show full processlist, show engine innodb status\G 수집
+### 2) error log, 명령어 수집시 에러로그 수집
    
