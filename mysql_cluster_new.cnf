@@ -16,7 +16,6 @@ slow_query_log_file=/home/mysql/log/sq_log.log
 
 # Maximum limits 
 max-connections=1000 
-open-files-limit=5000
 
 # Security setting for file load 
 secure-file-priv=/home/mysql/data
