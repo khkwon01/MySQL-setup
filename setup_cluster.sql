@@ -60,7 +60,7 @@ cluster.dissolve()
 Cluster.dissolve({force: true})
 
 -- Global 옵션 조정
-cluster.setOption('transactionSizeLimit', 900000000);
+cluster.setOption('transactionSizeLimit', 0);
 cluster.setOption('expelTimeout', 3600);
 cluster.setOption('consistency', 'BEFORE_ON_PRIMARY_FAILOVER');
 
