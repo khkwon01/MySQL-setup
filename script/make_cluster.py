@@ -20,5 +20,5 @@ try:
        print('\nSet up configuration of Innodbcluster for each instances.');
        shell.connect('root@', dbPass);
        dba.configure_instance('root@127.0.0.1', password = dbPass);
-except ValueError:
-       print('\nThe InnoDB Cluster could not be created.\n\nError.\n');
+except Exception as e:
+       print('\nThe InnoDB Cluster could not be created.\n\nError.\n' + str(e));
