@@ -6,6 +6,8 @@ print('==================================\n');
 print('Setting up a MySQL InnoDB Cluster with 3 MySQL Server another instances,\n');
 
 print('[Note that]');
+print('you must create the following account');
+print("create user root@'%' identified by '<yourpassword>';\ngrant all privileges on *.* to root@'%' with grant option;");
 print('cluster configuration account : clsconfadmin');
 print('clsuter admin account : clsadmin');
 print('cluster router account : clsrouter \n');
