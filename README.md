@@ -80,7 +80,7 @@
    - sql_require_primary_key 옵션 셋팅 (0 --> 1)
    - 혹시 테이블에 PK 생성이 안되어 있을 경우 내부적으로 생성 SET sql_generate_invisible_primary_key=ON;
 ### 5) Single Primary일 경우 성능 향상을 위해 아래 옵션 적용
-set persist group_replication_paxos_single_leader = ON;    (default는 OFF)
+   - set persist group_replication_paxos_single_leader = ON;    (default는 OFF)
 
 
 ## 4. 기본 사용법
