@@ -10,7 +10,7 @@
 - 커널값 수정 : vm.swappiness 1
 - 파일시스템은 xfs, 마운트 옵션은 noatime,nodiratime 포함 
 
-
+     
 ## 2. MySQL 8.0.31 싱글 인스턴스 구성 (파일중 _single 항목)
 ### 1) 구성도
 ![image](https://user-images.githubusercontent.com/8789421/210689191-4d3fc35b-cff2-44da-801a-3aec88777556.png)
@@ -60,7 +60,7 @@
      - 시작 : /opt/mysql/enterprise/monitor/mysqlmonitorctl.sh start
 #### B. 접속 
    - https://single_ip:18443  (user : admin)
-
+      
 ## 3. MySQL 8.0.31 Cluster 구성 (파일중 _cluster 항목)
 ### 1) 구성도
 ![image](https://user-images.githubusercontent.com/8789421/216266513-7ba0c569-4e77-49af-ac62-99952cf39763.png)
