@@ -79,6 +79,9 @@
 ### 4) PK 사용 강제화 (PK 사용하지 않을 경우 에러발생)
    - sql_require_primary_key 옵션 셋팅 (0 --> 1)
    - 혹시 테이블에 PK 생성이 안되어 있을 경우 내부적으로 생성 SET sql_generate_invisible_primary_key=ON;
+### 5) Single Primary일 경우 성능 향상을 위해 아래 옵션 적용
+![image](https://github.com/khkwon01/MySQL-setup/assets/8789421/9dbbb4c2-8401-4804-a785-e8c947af7a69)
+
 
 ## 4. 기본 사용법
 ### 1) Cli 접속 
