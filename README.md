@@ -61,7 +61,7 @@
 #### B. 접속 
    - https://single_ip:18443  (user : admin)
       
-## 3. MySQL 8.0.31 Cluster 구성 (파일중 _cluster 항목)
+## 3. MySQL 8.0.34 Cluster 구성 (파일중 _cluster 항목)
 ### 1) 구성도
 ![image](https://user-images.githubusercontent.com/8789421/216266513-7ba0c569-4e77-49af-ac62-99952cf39763.png)
 
