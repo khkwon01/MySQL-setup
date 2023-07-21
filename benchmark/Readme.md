@@ -1,7 +1,7 @@
 # MySQL8.0 Community와 MySQL8.0 EE 비교
 
 ## 1. 사용 환경
-### 1) OS : Rocky 8.6
+### 1) OS : Rocky 8.7
 ### 2) HW : Oracle VM.Standard.E4.Flex (AMD cpu)
 ### 3) 기본 패키지 설치
        - yum install wget
