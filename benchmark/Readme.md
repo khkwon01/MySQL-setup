@@ -8,4 +8,4 @@
        - yum install unzip
 
 ## 2. Community 설치
-### 1) 다운로드 : https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-8.0.34-linux-glibc2.28-aarch64.tar
+### 1) 다운로드 : wget https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-8.0.34-linux-glibc2.12-x86_64.tar
