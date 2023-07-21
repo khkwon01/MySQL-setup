@@ -10,13 +10,13 @@ mkdir -p /home/mysql/mysql-latest
 mkdir -p /home/mysql/keyring
 
 # single mysql
-cp /root/tta-main/my.cnf_single /home/mysql/etc/my.cnf
+cp /root/MySQL-setup-main/my.cnf_single_new /home/mysql/etc/my.cnf
 
 # cluster mysql (when cluster mysql install, remove the comment and then change server id according to assigned id)
-# cp /root/tta-main/my.cnf_cluster /home/mysql/etc/my.cnf
+# cp /root/MySQL-setup-main/my.cnf_cluster_new /home/mysql/etc/my.cnf
 
-cp /root/tta-main/4.start_mysql.sh /home/mysql/start_mysql.sh
-cp /root/tta-main/4.stop_mysql.sh /home/mysql/stop_mysql.sh
+cp /root/MySQL-setup-main/4.start_mysql.sh /home/mysql/start_mysql.sh
+cp /root/MySQL-setup-main/4.stop_mysql.sh /home/mysql/stop_mysql.sh
 chmod 750 /home/mysql/start_mysql.sh
 chmod 750 /home/mysql/stop_mysql.sh
 
