@@ -11,7 +11,7 @@
 - 파일시스템은 xfs, 마운트 옵션은 noatime,nodiratime 포함 
 
      
-## 2. MySQL 8.0.31 싱글 인스턴스 구성 (파일중 _single 항목)
+## 2. MySQL 8.0.34 싱글 인스턴스 구성 (파일중 _single 항목)
 ### 1) 구성도
 ![image](https://user-images.githubusercontent.com/8789421/210689191-4d3fc35b-cff2-44da-801a-3aec88777556.png)
 
