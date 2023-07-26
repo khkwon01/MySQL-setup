@@ -1,5 +1,5 @@
 
-# MySQL8.0 Community와 MySQL8.0 EE 비교
+# MySQL8.0 Community와 MySQL8.0 EE 비교  
 
 ## 1. 사용 환경
 ### 1) OS : Rocky 8.7
