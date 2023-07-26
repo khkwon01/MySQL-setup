@@ -7,6 +7,7 @@
        - yum install wget
        - yum install unzip
        - yum install ncurses-compat-libs
+       - yum install sysstat
 
 ## 2. MySQL 설치
 ### 1) Community 설치
@@ -17,5 +18,14 @@
 ## 3. Sysbench 설치
 ### 1) curl -s https://packagecloud.io/install/repositories/akopytov/sysbench/script.rpm.sh | sudo bash
 ### 2) yum install sysbench
+
+## 4. 성능 테스트
+### 1) 테스트 환경
+| 구분 | 세부 내용 | 비고 |
+|---|:---:|:---|
+| `DB 이름` | sysbench |  |
+| `테이블 개수` | 10 | sbtestx |
+| `테이블 사이즈` | 1천만건 | 총 1억 (10 * 천만건)  |
+| `테이블 총용량` | 20GB | 10 * 2G  |
 
 
