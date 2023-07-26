@@ -43,7 +43,7 @@
 | `테이블 사이즈` | 1천만건 | 총 1억 (10 * 천만건)  |
 | `테이블 총용량` | 20GB | 10 * 2G  |     
 ### 2) sysbench 테스트
-- 데이터 생성
+  - 데이터 생성
     ```
     sysbench --db-driver=mysql --time=50 --threads=10 --report-interval=20 --mysql-host=127.0.0.1 --mysql-port=3306 --mysql-user=systest --mysql-password="" --mysql-db=sysbench --tables=10 --table_size=10000000 oltp_read_write prepare
     ```
