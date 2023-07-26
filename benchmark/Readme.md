@@ -14,6 +14,19 @@
        - 다운로드 : wget https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-8.0.34-linux-glibc2.12-x86_64.tar
 ### 2) Enterprise 설치
        - edelivery.oracle.com 에서 다운로드 (계정 필요)
+### 3) Variables 값 비교 
+ ```
+ build_id                                                 	 252698fe27ba725a3b3a36500f1d3509550b489c    
+ hostname                                                 	 mysql8-0-ee-885358                          
+ license                                                  	 Commercial                                  
+ relay_log                                                	 mysql8-0-ee-885358-relay-bin        
+ relay_log_basename                                       	 /home/mysql/data/mysql8-0-ee-885358-relay-bin         
+ relay_log_index                                          	 /home/mysql/data/mysql8-0-ee-885358-relay-bin.index   
+ server_id                                                	 2                                                     
+ server_uuid                                              	 66a4ea97-2b5c-11ee-a533-0200170176bd                  
+ version                                                  	 8.0.34-commercial               
+ version_comment                                          	 MySQL Enterprise Server - Commercial    
+ ```
 
 ## 3. Sysbench 설치
 ### 1) curl -s https://packagecloud.io/install/repositories/akopytov/sysbench/script.rpm.sh | sudo bash
