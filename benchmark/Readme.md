@@ -80,3 +80,8 @@
 
        동시 사용 세션을 1000개 이상 설정해도 cpu 사용률이 크게 변동하지 않음
        ![image](https://github.com/khkwon01/MySQL-setup/assets/8789421/8f0b848d-dc62-4162-89fe-d49ba82f5402)
+
+   - 데이터 정리
+     ```
+     sysbench --db-driver=mysql --time=100 --threads=50 --report-interval=20 --mysql-host=127.0.0.1 --mysql-port=3306 --mysql-user=systest --mysql-password="Welcome#1" --mysql-db=sysbench --tables=10 --table_size=10000000 oltp_read_write cleanup
+     ```
