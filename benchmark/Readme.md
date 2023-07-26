@@ -63,14 +63,20 @@
        | `thread 400` | 639.06 | 76.26 (user: 45.16, iowait: 23.74) | 80초부터 tps가 1/5로 떨어짐  |      
 
        동시 사용(thread) 세션을 200개 이상으로 설정하여 테스트시 아래와 같이 cpu 사용률이 90%이상을 도달한 후 성능이 떨어짐
-       ![image](https://github.com/khkwon01/MySQL-setup/assets/8789421/1cc5bcfc-7340-4f3d-ae13-34113fec1089)     
+       ![image](https://github.com/khkwon01/MySQL-setup/assets/8789421/1cc5bcfc-7340-4f3d-ae13-34113fec1089)
+
+       동시 사용 세션을 1000개 이상 설정하면 아래와 같이 cpu 사용률이 떨어짐
+       <img width="974" alt="image" src="https://github.com/khkwon01/MySQL-setup/assets/8789421/f91df3b6-c512-4499-bb0d-2ebb95957138">
+
 
      - Enterprise 
        | 구분 | tps (sec) | cpu | 비고 |
        |---|:---|:---|:---|
        | `thread 50`  | 320.01 | 85.58 (user: 22.39, iowait: 52.06) |  |
        | `thread 100` | 455.11 | 61.29 (user: 30.39, iowait: 15.78) |  |
-       | `thread 200` | 502.53 | 72.56 (user: 33.68, iowait: 13.93) | 80초부터 tps가 1/4로 떨어짐  |
-       | `thread 300` | 835.60 | 85.89 (user: 55.35, iowait: 5.57)  | 80초부터 tps가 1/3로 떨어짐  |
-       | `thread 400` | 942.80 | 94.42 (user: 64.61, iowait: 5.58)  | 80초부터 tps가 1/3로 떨어짐  |               
+       | `thread 200` | 502.53 | 72.56 (user: 33.68, iowait: 13.93) | 80초부터 tps가 1/2로 떨어짐  |
+       | `thread 300` | 835.60 | 85.89 (user: 55.35, iowait: 5.57)  | 80초부터 tps가 1/2로 떨어짐  |
+       | `thread 400` | 942.80 | 94.42 (user: 64.61, iowait: 5.58)  | 80초부터 tps가 1/2로 떨어짐  |
 
+       동시 사용 세션을 1000개 이상 설정해도 cpu 사용률이 크게 변동하지 않음
+       ![image](https://github.com/khkwon01/MySQL-setup/assets/8789421/8f0b848d-dc62-4162-89fe-d49ba82f5402)
