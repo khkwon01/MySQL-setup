@@ -6,9 +6,13 @@
 ### 3) 기본 패키지 설치
        - yum install wget
        - yum install unzip
+       - yum install ncurses-compat-libs
 
-## 2. Community 설치
-### 1) 다운로드 : wget https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-8.0.34-linux-glibc2.12-x86_64.tar
+## 2. MySQL 설치
+### 1) Community 설치
+       - 다운로드 : wget https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-8.0.34-linux-glibc2.12-x86_64.tar
+### 2) Enterprise 설치
+       - edelivery.oracle.com 에서 다운로드 (계정 필요)
 
 ## 3. Sysbench 설치
 ### 1) curl -s https://packagecloud.io/install/repositories/akopytov/sysbench/script.rpm.sh | sudo bash
