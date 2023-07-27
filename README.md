@@ -2,8 +2,8 @@
 ## 1. 설치 서버
 | 구분 | OS | EA | 설치항목 |
 |---|:---:|---:|---|
-| `단일 서버 (single)` | CentOS 8.0 | 1 | MySQL 8.0.31 Server, Shell, Monitor |
-| `이중화 서버 (cluster)` | CentOS 8.0 | 3 | MySQL 8.0.31 Server, Shell, Router(3번서버) |
+| `단일 서버 (single)` | CentOS 8.0, Rocky 8.7 | 1 | MySQL 8.0.34 Server, Shell, Monitor |
+| `이중화 서버 (cluster)` | CentOS 8.0, Rocky 8.7 | 3 | MySQL 8.0.34 Server, Shell, Router(3번서버) |
 - 시스템 패키지 설치에 편이성을 위해 CentOS 보다는 Oracle linux 설치를 요청 (CentOS는 yum대신 rpm를 올려서 설치해야함)
 - CentOS일 경우 : yum install python39-libs, rpm -ivh mysql-shell..
 - OS 방화벽은 DB 관련 포트를 다 오픈 하던가 아님 disable : systemctl stop firewalld.service, systemctl disable firewalld.service
