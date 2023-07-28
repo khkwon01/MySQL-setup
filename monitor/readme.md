@@ -8,13 +8,17 @@
   wget https://dl.influxdata.com/influxdb/releases/influxdb2-2.7.0.x86_64.rpm
   yum localinstall influxdb2-2.7.0.x86_64.rpm
   ```
-  - inflexdb install
+  - inflexdb setup
     ```
     http://<<influxdb ip>>:8086/
     ```
 - grafana install : yum install -y https://dl.grafana.com/enterprise/release/grafana-enterprise-10.0.3-1.x86_64.rpm
+  - grafana setup
+    ```
+    http://<<grafana ip>>:3000/         # default user : admin (password : admin), after login in, you must change it.
+    ```
 - fluentbit install : curl https://raw.githubusercontent.com/fluent/fluent-bit/master/install.sh | sh
-  - fluent install ( /etc/td-agent-bit/td-agent-bit.conf )
+  - fluent configuration ( /etc/td-agent-bit/td-agent-bit.conf )
     ```
     [INPUT]
     name cpu
@@ -52,4 +56,9 @@ from(bucket: "mysql")                                            // bucket name
   |> yield()
 ```
 
-## 3.
+## 3. monitoring screen
+- influxdb
+  ![image](https://github.com/khkwon01/MySQL-setup/assets/8789421/6b798a0c-db7c-49f0-9cec-784fdeb96cfd)
+- grafana
+  ![image](https://github.com/khkwon01/MySQL-setup/assets/8789421/64ca6293-5c35-4f78-b8ae-fd8255bd0f26)
+
