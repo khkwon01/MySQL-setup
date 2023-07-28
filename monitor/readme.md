@@ -3,18 +3,18 @@
 ## 1. monitoring flow
 ![image](https://github.com/khkwon01/MySQL-setup/assets/8789421/442e0039-5ee8-4bc8-ac45-9788302217a9)
 
-- inflexdb 설치
+- inflexdb install
   ```
   wget https://dl.influxdata.com/influxdb/releases/influxdb2-2.7.0.x86_64.rpm
   yum localinstall influxdb2-2.7.0.x86_64.rpm
   ```
-  - inflexdb 구성
+  - inflexdb install
     ```
     http://<<influxdb ip>>:8086/
     ```
-- grafana 설치 : yum install -y https://dl.grafana.com/enterprise/release/grafana-enterprise-10.0.3-1.x86_64.rpm
-- fluentbit 설치 : curl https://raw.githubusercontent.com/fluent/fluent-bit/master/install.sh | sh
-  - fluent 설정 ( /etc/td-agent-bit/td-agent-bit.conf )
+- grafana install : yum install -y https://dl.grafana.com/enterprise/release/grafana-enterprise-10.0.3-1.x86_64.rpm
+- fluentbit install : curl https://raw.githubusercontent.com/fluent/fluent-bit/master/install.sh | sh
+  - fluent install ( /etc/td-agent-bit/td-agent-bit.conf )
     ```
     [INPUT]
     name cpu
