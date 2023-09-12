@@ -2,3 +2,6 @@
 
 ### 1) Innodb Cluster 구성 
 mysqlsh --file  make_cluster.py 
+
+### 2) MySQLX 사용 python 테스트 수행
+python3.9 (> 3.7) pytest.py
