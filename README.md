@@ -6,7 +6,10 @@
 | `이중화 서버 (cluster)` | CentOS 8.0, Rocky 8.7 | 3 | MySQL 8.0.34 Server, Shell, Router(3번서버) |
 - 시스템 패키지 설치에 편이성을 위해 CentOS 보다는 Oracle linux 설치를 요청 (CentOS는 yum대신 rpm를 올려서 설치해야함)
 - CentOS일 경우 : yum install python39-libs, rpm -ivh mysql-shell..
-- OS 방화벽은 DB 관련 포트를 다 오픈 하던가 아님 disable : systemctl stop firewalld.service, systemctl disable firewalld.service
+- OS 방화벽은 DB 관련 포트를 다 오픈 하던가 아님 disable
+     - systemctl stop firewalld.service
+     - systemctl disable firewalld.service
+     - setenforce 0
 - 커널값 수정 : vm.swappiness 1
 - 파일시스템은 xfs, 마운트 옵션은 noatime,nodiratime 포함 
 
