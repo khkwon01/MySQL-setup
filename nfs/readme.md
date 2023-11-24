@@ -8,7 +8,7 @@ systemctl enable nfs-server
 systemctl start nfs-utils.service
 ```
 3. expose the shared file system to external VM
-1) register nfs filesystem in /etc/exports for exposing external
+a) register nfs filesystem in /etc/exports for exposing external
 ```
 /workshop/linux 10.0.0.0/16(ro,sync,no_root_squash,no_all_squash)     
 /workshop/databases 10.0.0.0/16(ro,sync,no_root_squash,no_all_squash)   
@@ -16,7 +16,7 @@ systemctl start nfs-utils.service
 /workshop/sshkeys 10.0.0.0/16(ro,sync,no_root_squash,no_all_squash)
 /workshop/test 10.0.0.0/16(rw,sync,no_root_squash,no_all_squash)
 ```
-2) start nfs server
+b) start nfs server
 ```
 systemctl start nfs-server
 exportfs -a
@@ -24,11 +24,11 @@ exportfs -a
 
 
 4. mount external vm from exporting system (source)
-1) register nfs in /etc/fstab
+a) register nfs in /etc/fstab
 ```
 10.10.10.10:/workshop/test /workshop/test nfs defaults,nofail,nosuid,resvport 0 0
 ```
-2) mount nfs filesystem
+b) mount nfs filesystem
 ```
 mount /workshop/test
 ```
