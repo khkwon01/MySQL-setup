@@ -1,9 +1,11 @@
 1. install nfs both of nfs server and client
+```
 yum install nfs-utils
-
+```
 2. start nfs
+```
 systemctl start nfs-utils.service
-
+```
 3. expose the shared file system to external vm
 ```
 /workshop/linux 10.0.0.0/16(ro,sync,no_root_squash,no_all_squash)     
@@ -15,7 +17,10 @@ systemctl start nfs-utils.service
 
 4. mount external vm from exporting system (source)
 1) register nfs in /etc/fstab
+```
 10.10.10.10:/workshop/test /workshop/test nfs defaults,nofail,nosuid,resvport 0 0
-
+```
 2) mount nfs filesystem
+```
 mount /workshop/test
+```
