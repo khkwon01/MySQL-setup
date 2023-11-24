@@ -9,8 +9,13 @@ systemctl start nfs-utils.service
 /workshop/linux 10.0.0.0/16(ro,sync,no_root_squash,no_all_squash)     
 /workshop/databases 10.0.0.0/16(ro,sync,no_root_squash,no_all_squash)   
 /workshop/support 10.0.0.0/16(ro,sync,no_root_squash,no_all_squash)   
-/workshop/sshkeys 10.0.0.0/16(ro,sync,no_root_squash,no_all_squash)    
+/workshop/sshkeys 10.0.0.0/16(ro,sync,no_root_squash,no_all_squash)
+/workshop/test 10.0.0.0/16(rw,sync,no_root_squash,no_all_squash)    
 ```
 
 4. mount external vm from exporting system (source)
-1) 
+1) register nfs in /etc/fstab
+10.10.10.10:/workshop/test /workshop/test nfs defaults,nofail,nosuid,resvport 0 0
+
+2) mount nfs filesystem
+mount /workshop/test
