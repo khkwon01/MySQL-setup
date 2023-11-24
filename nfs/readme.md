@@ -17,6 +17,8 @@ systemctl enable nfs-server
   ```
   systemctl start nfs-server
   exportfs -a
+  exportfs -v
+  showmount --exports
   ```
 
 
@@ -28,4 +30,5 @@ systemctl enable nfs-server
   - mount nfs filesystem
   ```
   mount /workshop/test
+  nfsstat --mounts
   ```
