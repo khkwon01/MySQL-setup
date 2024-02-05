@@ -68,7 +68,6 @@
 ### 1) 구성도
 ![image](https://user-images.githubusercontent.com/8789421/216266513-7ba0c569-4e77-49af-ac62-99952cf39763.png)
 
-   - 서비스IP : <3번 서버 IP>
    - Auto 서비스포트 (자동분배, primary/seconary) : 6450
    - 서비스포트 (Read/Write용) : 6446
    - 서비스포트 (Read용) : 6447
