@@ -16,7 +16,7 @@
      
 ## 2. MySQL 8.0.34 싱글 인스턴스 구성 (파일중 _single 항목)
 ### 1) 구성도
-![image](https://user-images.githubusercontent.com/8789421/210689191-4d3fc35b-cff2-44da-801a-3aec88777556.png)
+![image](https://github.com/khkwon01/MySQL-setup/assets/8789421/7369fae9-e0c8-4a0f-928f-cf2b4533cdfd)
 
    - MySQL 시작 : /mysql/start_mysql.sh  => /home/mysql/start_mysql.sh
    - MySQL 중단 : /mysql/stop_mysql.sh  => /home/mysql/stop_mysql.sh 
