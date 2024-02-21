@@ -483,7 +483,7 @@ test_func () {
 echo "$(date) - INFO - Start" >> ${log_file}
 echo "$(date) - INFO - Script version ${VERSION}" >> ${log_file}
 
-echo "$(date) - INFO - Check, and if needed install, pre-requisites" >> ${log_file}
+echo "$(date) - INFO - Check, and if needed install, pre-requisites" |tee -a ${log_file}
 
 sudo yum -y -q install ncurses-compat-libs dialog wget unzip jq python39-libs 2>&1 >>${log_file}
 sudo mkdir -p ${sw_dir} 2>&1 >>${log_file}
