@@ -1,0 +1,67 @@
+[mysql]
+socket=/mysql/temp/mysql.sock
+mysqlx_socket=/mysql/temp/mysqlx.sock
+
+[mysqld]
+# General configurations
+server_id=57
+socket=/mysql/temp/mysql.sock
+
+# MySQL user
+user=mysqluser
+
+# File locations
+basedir=/mysql/mysql-latest
+plugin-dir=/mysql/mysql-latest/lib/plugin
+datadir=/mysql/data
+tmpdir=/mysql/temp
+log-error=/mysql/log/err_log.log
+general_log_file=/mysql/log/gl_log.log
+slow_query_log_file=/mysql/log/sq_log.log
+
+# Maximum limits
+max-connections=1000
+open-files-limit=5000
+
+# Security setting for file load
+secure-file-priv=/mysql/data
+local_infile=ON
+
+# InnoDB settings 
+#innodb_flush_log_at_trx_commit=2 
+innodb_flush_log_at_trx_commit=1 
+innodb_buffer_pool_size=32G
+innodb_buffer_pool_instances=16
+innodb_page_cleaners=16
+innodb_flush_method=O_DIRECT
+innodb_io_capacity=10000
+innodb_io_capacity_max=20000
+tmp_table_size=128M
+
+innodb_io_capacity=5G
+innodb_read_io_threads = 16
+innodb_write_io_threads = 8
+
+table_open_cache=2048
+innodb_open_files=2048
+open_files_limit=100000 
+max_prepared_stmt_count=1048576
+innodb_change_buffer_max_size=50
+innodb_adaptive_hash_index=off
+innodb_doublewrite=0
+innodb_thread_sleep_delay=500
+thread_cache_size=1000
+transaction_isolation=READ-COMMITTED
+
+# MyISAM settings
+key_buffer_size=124M
+
+# Enable binary logs
+log-bin=/mysql/binlog/binlog
+binlog-format=row
+
+# Performance Monitor
+performance_schema_consumer_events_statements_history_long = ON
+
+# Plugin load 
+plugin-load=validate_password.so
