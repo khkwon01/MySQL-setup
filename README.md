@@ -12,6 +12,7 @@
      - setenforce 0
      - or
      - setsebool -P mysql_connect_any 1
+     - firewall-cmd --permanent --zone=public --add-port=3306/tcp
      - firewall-cmd --permanent --zone=trusted --add-source=192.168.10.0/24
      - firewall-cmd --reload
 - 커널값 수정 : vm.swappiness 1
