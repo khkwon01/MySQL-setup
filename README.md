@@ -2,8 +2,8 @@
 ## 1. 설치 서버
 | 구분 | OS | EA | 설치항목 |
 |---|:---:|---:|---|
-| `단일 서버 (single)` | CentOS 8.0, Rocky 8.7 | 1 | MySQL 8.0.36 Server, Shell, Monitor |
-| `이중화 서버 (cluster)` | CentOS 8.0, Rocky 8.7 | 3 | MySQL 8.0.36 Server, Shell, Router(3번서버) |
+| `단일 서버 (single)` | CentOS 8.0, Rocky 8.7 | 1 | MySQL 8.4.0 Server, Shell, Monitor |
+| `이중화 서버 (cluster)` | CentOS 8.0, Rocky 8.7 | 3 | MySQL 8.4.0 Server, Shell, Router(3번서버) |
 - 시스템 패키지 설치에 편이성을 위해 CentOS 보다는 Oracle linux 설치를 요청 (CentOS는 yum대신 rpm를 올려서 설치해야함)
 - CentOS일 경우 : yum install python39-libs, rpm -ivh mysql-shell..
 - OS 방화벽은 DB 관련 포트를 다 오픈 하던가 아님 disable
@@ -19,7 +19,7 @@
 - 파일시스템은 xfs, 마운트 옵션은 noatime,nodiratime 포함 
 
      
-## 2. MySQL 8.0.36 싱글 인스턴스 구성 (파일중 _single 항목)
+## 2. MySQL 8.4.0 싱글 인스턴스 구성 (파일중 _single 항목)
 ### 1) 구성도
 ![image](https://github.com/khkwon01/MySQL-setup/assets/8789421/9d9e9d3f-da1c-4f72-b943-0feacc371177)
 
