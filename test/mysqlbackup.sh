@@ -2,11 +2,11 @@
 
 
 -- tde 파일이 없을 경우 백업
-mysqlbackup --host=127.0.0.1 --protocol=tcp --user=root --password --backup-dir=/mysql/backup backup-and-apply-log
+mysqlbackup --host=127.0.0.1 --protocol=tcp --user=mysqlbackup --password --backup-dir=/mysql/backup backup-and-apply-log
 
 
 -- tde 파일이 있을 경우 백업
-mysqlbackup --host=127.0.0.1 --protocol=tcp --user=root --password --backup-dir=/mysql/backup --encrypt-password backup-and-apply-log
+mysqlbackup --host=127.0.0.1 --protocol=tcp --user=mysqlbackup --password --backup-dir=/mysql/backup --encrypt-password backup-and-apply-log
 
 
 -- 복구시 
