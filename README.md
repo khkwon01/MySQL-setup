@@ -31,6 +31,11 @@
    - 아래 명령어를 통해서 plugin 설치 (script는 share 디렉토리밑에 존재)
    - mysql -uroot -p -h127.0.0.1 mysql < linux_install_firewall.sql     
      (linux_install_firewall.sql가 firewall plugin 설치 스크립트)
+   - firewall disable or enable
+     ```
+     SET PERSIST mysql_firewall_mode = OFF;
+     SET PERSIST mysql_firewall_mode = ON;
+     ```
 #### B. 서비스 계정에서 아래 명령어를 사용하여 적용
    - call mysql.sp_set_firewall_mode('계정명', 'RECORDING');    <-- 서비스 SQL 리코딩(수집) 할때
    - call mysql.sp_set_firewall_mode('계정명', 'PROTECTING');   <-- 수집된 whitelist로 이상한 SQL를 보호..
