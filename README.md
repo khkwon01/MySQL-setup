@@ -46,8 +46,7 @@
 
 ### 4) TDE 암호화
 #### A. 구성
-   - mysql 설치가 완료되면 my.cnf에서 tde 옵션 uncomment 
-   - mysql8.0 시작시 early_plugin_load 옵션 포함하여 미리 load 되도록 조정
+   - mysql8.0에서는 시작시 early_plugin_load 옵션 포함하여 미리 load 되도록 조정 (cnf 파일 참조)
      - keyring_file or
      - keyring_encrypted_file 
    - mysql8.4에서 아래와 같이 설정이 변경됨
