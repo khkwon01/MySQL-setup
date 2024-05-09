@@ -83,6 +83,9 @@
              "read_only": false
          }
          ```
+       - component 방식에 TDE 설정이 잘 되었는지 확인
+         ![image](https://github.com/khkwon01/MySQL-setup/assets/8789421/28574fb4-ca0b-497d-a1b1-4a818e8d4f84)
+
 #### B. file-based 암호화
    - create table ~~~ encryption = 'Y'
     
