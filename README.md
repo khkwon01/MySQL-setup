@@ -47,10 +47,45 @@
 ### 4) TDE 암호화
 #### A. 구성
    - mysql 설치가 완료되면 my.cnf에서 tde 옵션 uncomment 
-   - mysql 시작시 early_plugin_load 옵션 포함하여 미리 load 되도록 조정
+   - mysql8.0 시작시 early_plugin_load 옵션 포함하여 미리 load 되도록 조정
+     - keyring_file or
+     - keyring_encrypted_file 
+   - mysql8.4에서 아래와 같이 설정이 변경됨
+     - 어느 방식에 TDE를 사용할지 설정 (예제, password로 방식에 local 저장)
+       - mysqld와 같은 directory에 mysqld.my 생성후 설정 (local 방식 사용)
+         ```
+         [root@mds-vm02 bin]# cat mysqld.my
+         {
+             "read_local_manifest": true
+         }
+         ```
+       - data directory에 mysqld.my 생성 및 설정
+         ```
+         [root@mds-vm02 data]# cat mysqld.my 
+         {
+             "components": "file://component_keyring_encrypted_file"
+         }
+         ```
+     - component_keyring_encrypted_file방식에 대한 설정
+       - plugin directory에 component_keyring_encrypted_file.cnf 생성 및 설정
+         ```
+         [root@mds-vm02 bin]# cat component_keyring_encrypted_file.cnf 
+         {
+             "read_local_manifest": true
+         }
+         ```
+       - data directory에 component_keyring_encrypted_file.cnf 생성 및 설정
+         ```
+         [root@mds-vm02 data]# cat  component_keyring_encrypted_file.cnf
+         {
+             "path": "/mysql/keyring/component_keyring_encrypted_file",
+             "password": "Welcome#1",
+             "read_only": false
+         }
+         ```
 #### B. file-based 암호화
    - create table ~~~ encryption = 'Y'
-   
+    
 ### 5) Encryption 구성
 #### A. 구성
    - mysql cli에서 아래 명령 수행
