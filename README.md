@@ -47,7 +47,7 @@
 ### 3) 패스워드, 마스킹, 감사, thread plugin
    - my.cnf 파일에 thread/masking plugin 내용 반영하여 구성
      - plugin-load=thread_pool.so;data_masking.so (cnf 파일참조)
-   - audit install script 수행 (audit 관련 함수 추가)
+   - audit install script 수행 (audit 관련 함수 추가, share 디렉토리)
      - mysql -uroot -p -h127.0.0.1 mysql < audit_log_filter_linux_install.sql
 
 ### 4) TDE 암호화
