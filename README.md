@@ -49,6 +49,11 @@
      - plugin-load=thread_pool.so;data_masking.so (cnf 파일참조)
    - audit install script 수행 (audit 관련 함수 추가, share 디렉토리)
      - mysql -uroot -p -h127.0.0.1 mysql < audit_log_filter_linux_install.sql
+     - audit enable
+       ```
+       SELECT audit_log_filter_set_filter('log_all', '{ "filter": { "log": true } }');
+       SELECT audit_log_filter_set_user('%', 'log_all');
+       ```
 
 ### 4) TDE 암호화
 #### A. 구성
